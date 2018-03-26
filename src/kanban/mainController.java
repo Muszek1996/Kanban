@@ -160,7 +160,7 @@ public class mainController implements Initializable {
                 });
 
                 cell.setOnDragDone(event -> ((ListCell)event.getSource()).getListView().getItems().remove(cell.getItem()));
-it
+
 
                 cell.setOnDragDropped(event -> {
                     Dragboard db = event.getDragboard();
