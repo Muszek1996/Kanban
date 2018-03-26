@@ -7,6 +7,7 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <Pane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="kanban.taskController">
   <children>
@@ -48,6 +49,9 @@
           </VBox.margin>
         </TextArea>
         <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="94.0" style="-fx-background-color: &#10; linear-gradient(#29A5FF, #2387FF);&#10;    -fx-background-radius: 8,7,6;&#10;    -fx-background-insets: 0,1,2;&#10;    -fx-text-fill: white;&#10;    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );&#10;&#10;" text="Add">
+          <font>
+            <Font name="Gill Sans MT Bold" size="22.0" />
+          </font>
           <VBox.margin>
             <Insets bottom="5.0" top="15.0" />
           </VBox.margin>
