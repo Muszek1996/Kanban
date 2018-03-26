@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane id="borderPane" prefHeight="612.0000999999975" prefWidth="730.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="kanban.mainController">
+<BorderPane id="borderPane" prefHeight="612.0000999999975" prefWidth="730.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kanban.mainController">
   <bottom>
     <Button mnemonicParsing="false" onAction="#buttonAction" style="-fx-background-color: &#10; linear-gradient(#29A5FF, #2387FF);&#10;    -fx-background-radius: 8,7,6;&#10;    -fx-background-insets: 0,1,2;&#10;    -fx-text-fill: white;&#10;    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );&#10;" text="Add new task" textFill="WHITE" BorderPane.alignment="CENTER">
       <effect>
@@ -69,10 +68,10 @@
       <menus>
         <Menu mnemonicParsing="false" text="File">
           <items>
-            <MenuItem mnemonicParsing="false" onAction="#closeAction" text="Close" fx:id="closeMenuOption" />
+            <MenuItem fx:id="closeMenuOption" mnemonicParsing="false" onAction="#closeAction" text="Close" />
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" onShowing="#showAboutDialog" text="About" fx:id="about">
+        <Menu fx:id="about" mnemonicParsing="false" text="About">
           <items>
             <MenuItem mnemonicParsing="false" onAction="#showAboutDialog" text="About author" />
           </items>
